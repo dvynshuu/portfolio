@@ -1,0 +1,50 @@
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: #3C3D37;
+}
+
+.skills-inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-top: 3rem;
+padding-bottom: 6rem;
+@media (max-width : 1000px) {
+    display: inline-block;
+}
+}
+
+.skills-inner h2 span {
+    font-family: "Oswald";
+    font-size: clamp(2.5rem, 3vw, 4rem);
+    font-weight: 200;
+    padding: 2rem;
+}
+
+.resume-list {
+    font-size: clamp(1rem, 2.5vw, 4rem);
+    padding-left: 0.5rem;
+    @media (max-width : 1000px) {
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
+.skill {
+    margin-right: 0.5rem;
+    cursor: pointer;
+    @media (max-width: 428px) {
+        margin-right: 0px;
+    }
+}
+.skill:hover {
+    color: rgb(255, 79, 79);
+}
+.line1 {
+    display: flex;
+    @media(max-width: 388px) {
+        display: inline-block;
+    }
+}
+

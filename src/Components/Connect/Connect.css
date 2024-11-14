@@ -1,0 +1,88 @@
+.connect-navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+  @media (max-width: 650px) {
+    padding: 2rem 0rem;
+  }
+}
+
+.connect-back a {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.heading h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: 300;
+  font-size: clamp(1rem, 2vw, 4rem);
+  text-align: center;
+}
+
+.contact-form-container {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 400px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff5272;
+  outline: none;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success {
+  color: #5cb85c;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+button[type="submit"] {
+    width: 200px;
+  padding: 0.75rem;
+  background-color:#504c4c;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff395d;
+  color: #fff;
+}

@@ -1,0 +1,128 @@
+.footer {
+    font-family: PP Neue Montreal,sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-top: 6rem;
+}
+
+.inner-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: clamp(250px, 80vw , 500px);
+    border: 1px solid #3C3D37;
+    border-radius: 50px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+.inner-footer h1 {
+    font-family: Oswald;
+    font-weight: 200;
+    font-size: clamp(1.2rem, 3vw, 2.5rem);
+}
+
+.resume {
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size:clamp(0.5rem, 3vw , 1.2rem);
+    @media (max-width : 705px) {
+        margin-top: 1rem;
+    }
+}
+
+.resume a {
+    text-decoration: none;
+    color: #f1dada;
+}
+
+.resume a:hover {
+    color: rgb(255, 79, 79);
+}
+
+.inner-footer .Email {
+    display: flex;
+    font-size: clamp(1rem, 5vw , 4.5rem);
+    padding-bottom: 1.2rem;
+    opacity: 0.9;
+    cursor: pointer;
+    line-height: 1.1;
+    transition: all 250ms ease-in-out;
+}
+
+ .Email:hover {
+    opacity: 1;
+    color: #fb4566;
+    transform: scale(1.005);
+    
+}
+
+.span {
+    font-size: 25px;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: clamp(0.75rem, 2vw, 1rem);
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    @media(max-width : 625px) {
+        flex-direction: column;
+    }
+}
+.footer-bottom .lowO {
+    opacity: 0.7;
+    font-size: 0.75rem;
+}
+
+.available::before {
+    content: "";
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    background: #98fe7f;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    vertical-align: middle;
+    transform: translateY(-.1em);
+    animation: pulse-animation 2s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes pulse-animation {
+
+    0% {
+        box-shadow: 0 0 #98fe7f80;
+    }
+    100% {
+        box-shadow: 0 0 0 .5rem #98fe7f00;
+    }
+}
+
+.links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media(max-width:460px) {
+        gap: 0px;
+    }
+}
+.dot {
+    content: "";
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    background: rgb(252, 71, 71);
+    vertical-align: middle;
+    border-radius: 50%;
+    margin: 0.5rem;
+    transform: translateY(-.1em);
+}

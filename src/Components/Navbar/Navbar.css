@@ -1,0 +1,80 @@
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    padding:2rem;
+    color: #f1dada;
+    font-weight: 300;
+    letter-spacing: .05em;
+    @media (max-width : 755px) {
+        padding: 1rem 0rem;
+    }
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    cursor: pointer;
+    @media(max-width : 495px) {
+        
+    }
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #f1dada;
+}
+
+.nav-menu li a:hover {
+    color:#ff5272;
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    font-size: 19px;
+    line-height: normal;
+    height: 30px;
+    width: 70px;
+}
+
+.singh1, .singh2{
+    color: #f1dada;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.singh1 {
+    transform: translateY(0);
+}
+
+.singh2 {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+
+.header:hover .singh1 {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.header:hover .singh2 {
+    transform: translateY(0);
+    opacity: 1;
+    color: rgb(255, 79, 79);
+}

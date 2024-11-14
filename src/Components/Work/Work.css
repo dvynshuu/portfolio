@@ -1,0 +1,128 @@
+
+.box {
+    display: flex;
+    padding: 2.5rem 5rem;
+    border: 2px solid #3C3D37;
+    background-color: #121317;
+    border-radius: 20px;
+
+    @media (max-width : 1113px) {
+        padding: 1rem 2rem;
+    }
+}
+
+.column-level {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width : 1113px) {
+        text-align: unset;
+        flex-direction: column;
+    }
+}
+
+.anchor-button {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    border: 2px solid #9ca288;
+    padding: 0.75rem 2.75rem;
+    border-radius: 50px;
+    transition: all 0.2s ease-in-out;
+
+    @media(max-width : 338px) {
+        padding: 0.5rem 1rem;
+    }
+}
+
+.anchor-button:hover {
+    background-color: #FF204E;
+    color: yellow;
+}
+
+.column-items {
+    padding: 0.5rem;
+
+    @media (max-width : 1113px) {
+        padding: 1rem;
+    }
+}
+
+.icon img {
+    height: 27px;
+    width: 27px;
+}
+
+.anchor-text {
+    font-size: 1.1rem;
+}
+
+.divider-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.divider-heading {
+    font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+.divider-title::before,
+.divider-title::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #504c4c;
+    margin: 0 10px;
+}
+
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px; 
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    width: 325px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-card img:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border: 0.5px solid #3C3D37;
+    border-radius: 10px;
+}
+
+.project-card p a {
+    text-decoration: none;
+    color: #f1dada;
+}
+
+.project-card p {
+    margin-top: 1rem;
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
+}

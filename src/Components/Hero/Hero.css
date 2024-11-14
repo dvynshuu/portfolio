@@ -1,0 +1,111 @@
+.hero {
+    margin-top: 60px;
+    display: flex;
+    gap: 35px;
+    font-family: inherit;
+    @media(max-width : 1149px) {
+        display: inline-block;
+    }
+}
+.profile {
+    @media (max-width: 1149px) {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.hero img {
+    display: flex;
+    cursor: pointer;
+    height: 275px;
+    width: 275px;
+    border-radius: 50%;
+    border:  1px solid rgb(235, 76, 103);
+    background-image: url(../../assets/background.png);
+    background-position: center;
+    box-shadow: 2px 2px 7px darkorange;
+    background-size: auto;
+    margin-left: 3rem;
+    filter: grayscale(80%);
+    transition: filter 500ms;
+    @media(max-width : 1149px) {
+        margin-left: 0rem;
+    }
+}
+.hero img:hover {
+    filter: grayscale(0%);
+}
+
+.hello-dvynshu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.9rem;
+    margin-top: 2rem;
+    text-align: center;
+    
+    font-size: clamp(3rem, 3vw, 5rem);
+    @media(max-width : 1149px) {
+        margin-left: 0px;
+    }
+}
+.red-text {
+    color: rgb(237, 79, 79);
+}
+
+
+.hero h1 {
+    text-align: center;
+}
+.description {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 0.5rem;
+    @media(max-width : 1149px) {
+        width: 100%;
+        margin-top: 1rem;
+        padding-left: 0rem;
+    }
+}
+.description h1 {
+    font-size: clamp(2.75rem, 2.06vi + 2.26rem, 4.74rem);
+    font-weight: 300;
+    margin-bottom: 1em;
+    line-height: 1.1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10rem;
+    
+    @media(max-width : 1149px) {
+        margin-top: 1rem;;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+.strong {
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.description p {
+    margin-bottom: 4rem;
+    font-size: clamp(1.41rem, .61vw + 1.26rem, 2rem);
+    font-size: clamp(1.41rem, .61vi + 1.26rem, 2rem);
+     line-height: 1.3;
+     margin-left: 5rem;
+     width: 90%;
+     font-family: "Montserrat", sans-serif;
+     @media(max-width : 775px) {
+        margin-left: 2rem;
+     }
+     @media (max-width : 575px) {
+        margin-left: 1rem;
+     }
+}
